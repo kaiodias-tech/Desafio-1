@@ -36,7 +36,8 @@ jobs:
           node-version: ${{ matrix.node-version }}  
       
      # Instalando as dependencias 
-      - run: npm install  
+      - run: npm install
+      - run: npx cypress run  
     
      # Publicar relatorio em html
       - name: Deploy to GitHubPages
