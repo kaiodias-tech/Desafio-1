@@ -37,7 +37,10 @@ jobs:
       
      # Instalando as dependencias 
       - run: npm install
-      - run: npx cypress run  
+      - run: npx cypress run
+      - run: npm run report:merge
+      - run: npm run report:mocha
+      - run: npm run report:clean  
     
      # Publicar relatorio em html
       - name: Deploy to GitHubPages
