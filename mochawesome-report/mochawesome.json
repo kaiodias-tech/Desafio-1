@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-01-23T21:47:31.172Z",
+    "end": "2021-01-23T21:48:14.728Z",
+    "duration": 43556,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "817da733-c52c-4e33-98e1-ef4c2a36ce23",
+      "title": "",
+      "fullFile": "cypress\\integration\\cadastro.spec.js",
+      "file": "cypress\\integration\\cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f86816a8-3dd1-4920-9748-8aa877337a2f",
+          "title": "Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastro de usuário no site",
+              "fullTitle": "Cadastro Cadastro de usuário no site",
+              "timedOut": null,
+              "duration": 43583,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('h1[class=\"page-heading\"]').should('contain.text', 'Authentication');\ncy.get('input[name=\"email_create\"]').type(chance.email());\ncy.get('button[class$=\"button-medium exclusive\"]').click();\ncy.get('h1[class=\"page-heading\"]').should('contain.text', 'Create an account');\ncy.get('input#id_gender1').check('1');\ncy.get('input#customer_firstname').type(chance.first());\ncy.get('input#customer_lastname').type(chance.last());\ncy.get('input#passwd').type(chance.string());\ncy.get('select#days').select('9');\ncy.get('select#months').select('July');\ncy.get('select#years').select('1985'); //Endereço\ncy.get('input#firstname').type(chance.first());\ncy.get('input#lastname').type(chance.last());\ncy.get('input#company').type(chance.company());\ncy.get('input#address1').type(chance.address());\ncy.get('input#address2').type(chance.address());\ncy.get('input#city').type(chance.city());\ncy.get('select#id_country').select('United States');\ncy.get('select[name=id_state]').select('New York');\ncy.get('input#postcode').type(chance.zip());\ncy.get('textarea#other').type('Testes Automatizados com Cypress');\ncy.get('input#phone').type(chance.phone());\ncy.get('input#phone_mobile').type(chance.phone());\ncy.get('input#alias').type('My store'); //Botão cadastrar\ncy.get('button#submitAccount').click(); // Validando o cadastro\ncy.get('p[class=\"info-account\"]').should('contain.text', 'Welcome to your account. Here you can manage all of your personal information and orders.');",
+              "err": {},
+              "uuid": "06dc8f7e-8e88-4f2f-86a7-bd251943bd64",
+              "parentUUID": "f86816a8-3dd1-4920-9748-8aa877337a2f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "06dc8f7e-8e88-4f2f-86a7-bd251943bd64"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 43583,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
