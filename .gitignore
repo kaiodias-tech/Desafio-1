@@ -1,0 +1,9 @@
+node_modules
+# relatórios mocha
+mochawesome-report
+
+# videos
+cypress/videos
+
+# outros
+.DS_Store
