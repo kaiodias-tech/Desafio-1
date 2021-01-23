@@ -40,8 +40,8 @@ jobs:
     
      # Publicar relatorio em html
       - name: Deploy to GitHubPages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: c
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: mochawesome-report/full_report.html
+          FOLDER: mochawesome-report/reports
