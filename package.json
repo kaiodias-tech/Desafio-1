@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "report:merge": "mochawesome-merge > full_report.json",
+    "report:merge": "mochawesome-merge > index.json",
     "report:mocha": "marge full_report.json",
-    "report:clean": "rimraf mochawesome-report full_report.json"
+    "report:clean": "rimraf mochawesome-report index.json"
   },
   "keywords": [],
   "author": "",
