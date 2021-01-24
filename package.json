@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "report:merge": "mochawesome-merge > index.json",
-    "report:mocha": "marge full_report.json",
+    "report:mocha": "marge index.json",
     "report:clean": "rimraf mochawesome-report index.json"
   },
   "keywords": [],
