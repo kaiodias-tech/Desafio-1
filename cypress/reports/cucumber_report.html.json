@@ -1,0 +1,152 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Cadastro",
+    "line": 3,
+    "id": "cadastro",
+    "tags": [],
+    "uri": "Cadastro.feature",
+    "elements": [
+      {
+        "id": "cadastro;cadastro-de-novo-usuário",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Cadastro de novo usuário",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que acesso o site",
+            "result": {
+              "status": "passed",
+              "duration": 14731000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 7,
+            "name": "informar meus dados",
+            "result": {
+              "status": "passed",
+              "duration": 18978000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "salvar",
+            "result": {
+              "status": "passed",
+              "duration": 4128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 9,
+            "name": "devo ser cadastrado com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 101000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Funcionalidade",
+    "name": "Compras de produtos",
+    "line": 3,
+    "id": "compras-de-produtos",
+    "tags": [],
+    "uri": "Compras.feature",
+    "elements": [
+      {
+        "id": "compras-de-produtos;efetuar-a-compra-de-um-produto",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Efetuar a compra de um produto",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que acesso o site",
+            "result": {
+              "status": "passed",
+              "duration": 43353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 7,
+            "name": "escolho um determinado produto",
+            "result": {
+              "status": "passed",
+              "duration": 499000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 8,
+            "name": "verifico se o produto está no carrinho de compras",
+            "result": {
+              "status": "passed",
+              "duration": 7194000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 9,
+            "name": "sou direcionado para a tela de login",
+            "result": {
+              "status": "passed",
+              "duration": 2121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "sou autenticado",
+            "result": {
+              "status": "passed",
+              "duration": 3152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 11,
+            "name": "informo meus dados",
+            "result": {
+              "status": "passed",
+              "duration": 10752000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "finalizo a compra com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 4498000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

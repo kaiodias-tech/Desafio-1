@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "report:merge": "mochawesome-merge > index.json",
     "report:mocha": "marge index.json",
-    "report:clean": "rimraf mochawesome-report index.json"
+    "report:clean": "rimraf mochawesome-report full_report.json cypress/reports/cucumber-json/**",
+    "cy:open:cucumber": "npx cypress open --config-file cypress-cucumber.json",
+    "cy:run:cucumber": "npx cypress run --config-file cypress-cucumber.json --spec **/All.features",
+    "report:cucumber": "node cypress/reports/reporter.js"
+
   },
   "keywords": [],
   "author": "",
@@ -15,10 +19,23 @@
   "dependencies": {
     "chance": "^1.1.7",
     "cypress": "4.10.0",
-    "cypress-multi-reporters": "^1.4.0",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.1.0"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "cypress-multi-reporters": "^1.4.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate":true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cumcumber"
+    }
   }
 }
